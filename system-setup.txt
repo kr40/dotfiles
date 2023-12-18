@@ -6,7 +6,7 @@ sudo apt install git curl gh lua5.4 luarocks neofetch cmatrix lolcat htop ubuntu
 --> Install Wezterm - .deb file
 --> Install Chrome - .deb file
 --> Install oh-my-bash - bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
---> Copy dotfiles from github - https://github.com/kr40/dotfiles
+--> Install dotfiles from github - https://github.com/kr40/dotfiles
 --> Install Neovim
 
 curl -LO https://github.com/neovim/neovim/releases/download/v0.9.4/nvim.appimage
