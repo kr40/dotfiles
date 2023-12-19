@@ -25,9 +25,8 @@ export PATH=$PATH:/home/kr40/Desktop/scripts
 export FZF_DEFAULT_COMMAND='find . '
 export BAT_THEME=Dracula
 
-# Alisa's for Batcat
+# Alias's for Batcat
 alias bat='batcat'
-
 alias gte='gnome-text-editor'
 alias fd='fdfind -H'
 
@@ -104,7 +103,7 @@ alias lastvalue='RET=$?; if [[ $RET -eq 0 ]]; then echo -ne "\033[0;32m$RET\033[
 
 # Grab a pretty ascii forecast picture for anywhere; without arguments, uses ISP location to print your weather
 # Example: weather New York, NY
-function weather() { curl -s http://wttr.in/$1; }
+function weather() { curl -s http://wttr.in/"$1"; }
 
 # Convert hex data file to a binary
 function hex2bin() {
