@@ -30,6 +30,10 @@ alias bat='batcat'
 alias gte='gnome-text-editor'
 alias fd='fdfind -H'
 
+# Alias's for cht.sh
+alias cht='cht.sh'
+alias chts='cht.sh --shell'
+
 # Alias's for TMUX
 alias t="tmux"
 alias ta="t a -t"
