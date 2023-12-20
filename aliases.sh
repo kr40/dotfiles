@@ -30,6 +30,9 @@ alias bat='batcat'
 alias gte='gnome-text-editor'
 alias fd='fdfind -H'
 
+# Alias's for Lazygit
+alias lg='lazygit'
+
 # Alias's for cht.sh
 alias cht='cht.sh'
 alias chts='cht.sh --shell'
@@ -68,7 +71,7 @@ alias 666='sudo chmod -R 666'
 alias 755='sudo chmod -R 755'
 alias 777='sudo chmod -R 777'
 
-#Echo current IPv4 Address
+# Echo current IPv4 Address
 alias myip="curl http://ipecho.net/plain; echo"
 
 alias sbash='source ~/.bashrc'
@@ -146,7 +149,7 @@ alias sha1='openssl sha1'
 alias fast='fast -u'
 
 # Alias to add hosts
-alias hosts='sudo mousepad /etc/hosts'
+alias hosts='sudo nvim /etc/hosts'
 
 # Searches for text in all files in the current folder
 ftext() {
@@ -218,7 +221,7 @@ up() {
 	cd $d
 }
 
-#Automatically do an ls after each cd
+# Automatically do an ls after each cd (Not working with oh-my-bash)
 cd() {
 	if [ -n "$1" ]; then
 		builtin cd "$@" && ls
@@ -232,6 +235,7 @@ pwdtail() {
 	pwd | awk -F/ '{nlast = NF -1;print $nlast"/"$NF}'
 }
 
+# Extract most know archives with one command
 ex() {
 	if [ -f "$1" ]; then
 		case $1 in
