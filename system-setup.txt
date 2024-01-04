@@ -8,17 +8,7 @@ sudo apt install git curl gh lua5.4 luarocks neofetch cmatrix lolcat htop ubuntu
 --> Install oh-my-bash - bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 --> Install dotfiles from github - https://github.com/kr40/dotfiles
 --> Install pacstall - sudo bash -c "$(curl -fsSL https://pacstall.dev/q/install)"
---> Install Neovim
-curl -LO https://github.com/neovim/neovim/releases/download/v0.9.4/nvim.appimage
-chmod u+x nvim.appimage
-
-./nvim.appimage --appimage-extract
-./squashfs-root/AppRun --version
-
-sudo mv squashfs-root /
-sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
-nvim
-
+--> Install Neovim - via pacstall
 --> Install nvm - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 --> Install LazyGit
 
